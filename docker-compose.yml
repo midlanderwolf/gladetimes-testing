@@ -3,7 +3,7 @@ services:
   web:
     build: .
     entrypoint: sh -c "uv sync --group dev --group test; DEBUG=1 exec ./manage.py runserver 0.0.0.0:8000"
-    container_name: django_web
+    container_name: django_web_gladetimes-testing
     environment:
       - SECRET_KEY=${SECRET_KEY-}
       - DATABASE_URL=${DATABASE_URL-postgis://postgres:postgres@postgres/postgres}
