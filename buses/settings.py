@@ -18,7 +18,7 @@ ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "*").split()
 
 CSRF_TRUSTED_ORIGINS = os.environ.get(
     "CSRF_TRUSTED_ORIGINS",
-    "https://bustimes.org",
+    "https://gladetimes.midlandbus.uk",
 ).split()
 CSRF_FAILURE_VIEW = "busstops.views.csrf_failure"
 

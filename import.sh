@@ -68,6 +68,7 @@ fi
 ./manage.py import_tnds "$USERNAME" "$PASSWORD"
 
 ./manage.py import_gtfs
+./manage.py import_gtfs_bod
 
 ./manage.py update_search_indexes
 
